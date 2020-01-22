@@ -1,18 +1,141 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Jmol, see http://www.jmol.org">
+  <meta name ="author" content = "Simaran Rajora">
+  <meta name ="keywords" content = "generated_by_Jmol_Webexport">
+  <title>BINF630 Assignment 2</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <style type="text/css">
+    h1,h2,h3,h5{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
+    .red{
+        color: #e90055;
+    }
+
+    .yellow{
+        color: #ffa800;
+    }
+    .color-code{
+        line-height: 2em;
+        font-size: 15px;
+    }
+    </style>
+
+</head>
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<div class="container">
+        <div class="row">
+            <h1 style="margin-top: 50px;">BINF630 Assignment 2</h1>
+            <h2>Name: <b>Simaran Rajora</b> </h2>
+            <hr/>
+              <h3>PROTEIN SELCETED: Q1NN20</h3>
+              <div>
+                  <h4>JPRED 4 SECONDARY STRUCTURE: </h4>
+                  <p>
+        
+                      is the latest version of the popular JPred protein secondary structure prediction server which provides predictions by the JNet algorithm,
+                       one of the most accurate methods for secondary structure prediction. In addition to protein secondary structure, JPred also makes predictions
+                        of solvent accessibility and coiled-coil regions. JPred4 features higher accuracy, with a blind three-state (a-helix, ß-strand and coil) 
+                        secondary structure prediction accuracy of 82.0% while solvent accessibility prediction accuracy has been raised to 90% for residues <5% accessible.  
+                  </p>
+                  <pre><code>
+                        MRISEMIQPERLAQTFVQLCEIDSPSFQEKALADYLQGLFATEFKAEILEDDSAVRTGSDTGNLVIRIGDHQQRAPA
+                        --<span class="red">HHHHHHHHHHHHHHHHHHH</span>--------<span class="red">HHHHHHHHHHHHHH</span>----<span class="yellow">EEEE</span>-----------<span class="yellow">EEEEEE</span>--------<span class="yellow">E</span>
+                        
+                        
+                        FFFNCHLDTVEPARGVKVRRRGDTFTSAGATILGADDKAGIAMLIELARCLKESKTTCPPLEFIFTTCEETGLLGAK
+                        <span class="yellow">EEEE</span>-------------------<span class="yellow">EEE</span>----<span class="yellow">EEE</span>-----<span class="red">HHHHHHHHHHHHHHHH</span>-------<span class="yellow">EEEEE</span>----------<span class="red">H</span>
+                        
+                        
+                        
+                        NFDFRLPRARAGFALDSAGIDVAVIGAPAANGYQATIHGVAAHAGLHPENGINAIQLAARAIAELPQGRLDEQSTAN
+                        <span class="red">HHHHHH</span>------<span class="yellow">EEEE</span>-------<span class="yellow">EE</span>-----<span class="yellow">EEEEEEEEEEEE</span>-----------<span class="red">HHHHHHHHHHH</span>-------------
+                        
+                        
+                        IGLITGGQATNIVADLAVVEGELRSHDTQLLARYTEQIEKVFKQTVAACHRSGEAAASLEFTVTEQFPLMRLEQASP
+                        -<span class="yellow">EEE</span>-----------<span class="yellow">EEEEEEEEE</span>----<span class="red">HHHHHHHHHHHHHHHHHHHHH</span>--------<span class="yellow">EEEE</span>---------------<span class="red">H</span>
+                        
+                        
+                        VLLQLHKAAEQLRRPLRYAMAGGGSDANIFTAHGLPTAILGTGMTDVHTTDESITLGDMVRTTELLLALAGD
+                        <span class="red">HHHHHHHHHH</span>-------<span class="yellow">EE</span>------<span class="red">HHHHHH</span>-----<span class="yellow">EEEEE</span>-----------<span class="yellow">EE</span>----<span class="red">HHHHHHHHHHHH</span>--    
+                  </code></pre>
+                  <h4 style="text-align: center">JPRED result of Secondary Structure</h4>
+                  <img src="Jpred.png" class="img-fluid" >
+                  
+                  <div>
+                        <h6 style="font-size: 18px; margin-top: 20px;">Color code for alignment:</h6>
+                        <hr>
+                      <p class="color-code">
+                          
+                            
+                            •	Blue            - Complete identity at a position <br>
+                            •	Shades of red   - The more red a position is, the higher the level of conservation of chemical properties of the amino acids <br>
+                            •	Jnet            - Final secondary structure prediction for query<br>
+                            •	jalign          - Jnet alignment prediction<br>
+                            •	jhmm            - Jnet hmm profile prediction<br>
+                            •	jpssm           - Jnet PSIBLAST pssm profile prediction<br>
+                            •	Lupas           - Lupas Coil prediction (window size of 14, 21 and 28)<br>
+                            
+                            •	Note on coiled coil predictions - = less than 50% probability <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                             c = between 50% and 90% probability <br> 
+                                                             C = greater than 90% probability <br>
+                            
+                            •	Jnet_25         - Jnet prediction of burial, less than 25% solvent accessibility <br>
+                            •	Jnet_5          - Jnet prediction of burial, less than 5% exposure<br>
+                            •	Jnet_0          - Jnet prediction of burial, 0% exposure<br>
+                            •	Jnet Rel        - Jnet reliability of prediction accuracy, ranges from 0 to 9, bigger is better.<br>
+                            •	Alpha are red in color, and beta sheets are green in color <br>
+                            •	Lupas_21, Lupas_14, Lupas_28 are coiled-coil predictions for the sequence. These are binary predictions for each location.<br>
+                            •	H stands for helix and E stands for Beta sheet.<br>
+                            •	So, the above figure shows 9 alpha helices and 15 beta sheets<br>
+                            
+                            
+                      </p>
+                  </div>
+
+                  <hr/>
+                  <div>
+                      <h2>SWISS 3D model</h2>
+                      <a href="Q1NN20.html" > Results for 3D model of protein</a>
+                  </div>
+                  <hr/>
+                  <div>
+                      <h2>Comparisons of predicted secondary structure with the secondary structure in 3D model</h2>
+
+                      <p>From the alignment Secondary structure obtained from swiss model is like that obtained from JPRED. Majority of the structure matches with those predicted by JPRED. In some regions there are few differences, but the length of those regions is very small. For example, the small beta sheet that is predicted by JPRED PSSM algorithm is not predicted in other models. Also, swiss model shows 2 beta sheets whereas for those sequences JPRED doesn't predict beta sheets. Also, the maximum amino acids in JPRED have scores above 7, as compared to the secondary structure obtained from SWISS-MODEL.  </p>
+
+                      <img src="comparision 1.JPG" class="img-fluid" alt="">
+                      <br>
+                      <hr>
+                      <img src="comparision 2.JPG" alt="">
+                      <br>
+                      <hr>
+                      <img src="c-3.JPG" class="img-fluid" alt="">
+                      <br>
+                      <hr>
+                      <img src="c-4.JPG" class="img-fluid" alt="">
+                      <br>
+                      <hr>
+                      <img src="c-5.JPG"  class="img-fluid" alt="">
+                      <br>
+                      <hr>
+                      <img src="c-6.JPG" class="img-fluid" alt="">
+                      <br>
+                      <br>
+                      <br>
+                  </div>
+
+              </div>
+        </div>
+      </div>
 
 </body>
 </html>
